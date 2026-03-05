@@ -5,7 +5,7 @@ function ManageMenu({ restaurant, onAddDish, onUpdateDish, onDeleteDish }) {
   const [showAddForm, setShowAddForm] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState('appetizers');
   const [editingDishId, setEditingDishId] = useState(null);
-  const [editingCategory, setEditingCategory] = useState(null);
+  // const [editingCategory, setEditingCategory] = useState(null);
 
   const categories = ['appetizers', 'mainCourse', 'breads', 'desserts', 'beverages'];
   const categoryLabels = {
@@ -78,7 +78,7 @@ function ManageMenu({ restaurant, onAddDish, onUpdateDish, onDeleteDish }) {
               isEditing={editingDishId === dish.id}
               onEdit={() => {
                 setEditingDishId(dish.id);
-                setEditingCategory(selectedCategory);
+                // setEditingCategory(selectedCategory);
               }}
               onDelete={() => handleDeleteDish(dish.id)}
               onUpdate={(updatedDish) => {

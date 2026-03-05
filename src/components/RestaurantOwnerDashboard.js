@@ -327,11 +327,11 @@ function CreateRestaurantForm({ onSubmit, onCancel }) {
 }
 
 function RestaurantOverviewCard({ restaurant }) {
-  const [imageLoaded, setImageLoaded] = React.useState(false);
+  // const [imageLoaded, setImageLoaded] = React.useState(false);
   const [imageError, setImageError] = React.useState(false);
 
   const handleImageLoad = () => {
-    setImageLoaded(true);
+    // setImageLoaded(true);
     setImageError(false);
   };
 
