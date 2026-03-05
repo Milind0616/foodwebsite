@@ -336,7 +336,7 @@ function RestaurantOverviewCard({ restaurant }) {
   };
 
   const handleImageError = () => {
-    setImageLoaded(true);
+    // setImageLoaded(true); // removed unused state update
     setImageError(true);
   };
 
